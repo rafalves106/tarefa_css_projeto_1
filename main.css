@@ -1,0 +1,408 @@
+/* RESET CSS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: block;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: normal;
+    font-size: 46px;
+    line-height: 0.9;
+    margin-bottom: 24px;
+    color: #AD4287;
+}
+
+h3 {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 0.9;
+    margin-bottom: 24px;
+    color: #10A352;
+}
+
+p {
+    font-family: 'Assistant', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* ESTILIZAÇÃO HEADER */
+
+header {
+    background-color: #fff;
+    padding: 18px 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    height: 36px;
+}
+
+header nav {
+    width: 320px;
+    display: block;
+    background-color: #AD4287;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition-duration: 0.7s;
+}
+
+header nav:hover {
+    transform: scaleX(1.1);
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+header li {
+    font-family: 'Assistant', sans-serif;
+    display: inline;
+}
+
+header li a {
+    color: #fff;
+}
+
+header li a:hover {
+    color: gainsboro;
+}
+
+header button {
+    background-color: #10A352;
+    display: block;
+    padding: 15px 36px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    transition-duration: .3s;
+    font-size: 18px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 500;
+}
+
+header button:hover {
+    box-shadow: 0px 5px 20px #259b255d;
+    background-color: #21b966;
+}
+
+button a, header li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ESTILIZAÇÃO HEADER */
+
+#banner {
+    padding: 60px 0px;
+    background-image:url(./images/banner-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#banner .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#banner .about {
+    max-width: 35%;
+}
+
+#banner h1 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 0.9;
+    margin-bottom: 24px;
+    color: white;
+}
+
+#banner p {
+    font-family: 'Assistant', sans-serif;
+    font-size: 18px;
+    color: #ad4287a1;
+    margin-bottom: 34px;
+}
+
+#banner ul {
+    max-width: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#banner li {
+    display: inline;
+}
+
+#button-beneficts {
+    background-color: #AD4287;
+    display: block;
+    padding: 15px 36px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    transition-duration: .3s;
+    font-size: 18px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#button-beneficts:hover {
+    box-shadow: 0px 5px 20px #7421563f;
+    background-color: #c45a9f;
+}
+
+#button-wait-list {
+    background-color: #10A352;
+    display: block;
+    padding: 15px 36px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    transition-duration: .3s;
+    font-size: 18px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#button-wait-list:hover {
+    box-shadow: 0px 5px 20px #259b255d;
+    background-color: #21b966;
+}
+
+#banner img {
+    height: 500px;
+    transition-duration: 1s;
+}
+
+#banner img:hover {
+    transform: translateX(20px) translateY(-20px);
+}
+
+/* ESTILIZAÇÃO BENEFÍCIOS */
+
+#benefits {
+    padding: 120px 0;
+    background-color: #f8f8f8;
+    background-image: url(./images/benefits-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#benefits .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#benefits .container h2 {
+    margin-bottom: 60px;
+}
+
+.icons-boxes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons-boxes p {
+    text-align: start;
+    color: #c2c1c1 ;
+}
+
+.icons-boxes img {
+    width: 36px;
+    margin-bottom: 8px;
+}
+
+.icons {
+    width: 300px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 40px;
+    background-color: #fff;
+    box-shadow: 0px 2px 20px #385e6825;
+    border-radius: 20px;
+    transition-duration: 0.5s;
+}
+
+.icons:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 2px 20px #385e6844;
+}
+
+/* ESTILIZAÇÃO LISTA DE ESPERA */
+
+#wait-list {
+    padding: 120px 0;
+    background-color: #f8f8f8;
+    background-image: url(./images/text-background-wait-list.png);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+#wait-list .container {
+    display: flex;
+    align-items: center;
+    width: 800px;
+    z-index: 999;
+}
+
+#wait-list img{
+    height: 600px;
+    border-radius: 20px 0px;
+    margin-right: 50px;
+}
+
+#wait-list-form p{
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #929292;
+}
+
+.form {
+    display: flex;
+}
+
+form input {
+    border: solid;
+    border-width: 1px;
+    border-color:#AD4287;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 15px 20px;
+    display: block;
+    font-family: 'Assistant', sans-serif;
+    font-size: 16px;
+}
+
+form input:focus, textarea:focus {
+    outline-color: #AD4287;
+    outline-width: 1px;
+}
+
+form button {
+    background-color: #10A352;
+    padding: 15px 36px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    transition-duration: .3s;
+    font-size: 18px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+}
+
+form button:hover {
+    box-shadow: 0px 5px 20px #259b255d;
+    background-color: #21b966;
+}
+
+/* ESTILIZAÇÃO CONTATO */
+
+#contact {
+    padding: 60px 0;
+    background-color: #d1d1d1;
+}
+
+#contact img {
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+#contact h4 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #AD4287;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    color: #333333;
+}
+
+#contact ul {
+    display: block;
+}
+
+#links li {
+    margin-bottom: 8px;
+    display: flex;
+    font-family: 'Assistant', sans-serif;
+    font-size: 16px;
+}
+
+#links li a {
+    color: #333333;
+    text-decoration: none;
+}
+
+#social li {
+    margin-right: 8px;
+    display: inline;
+    font-family: 'Assistant', sans-serif;
+    font-size: 16px;
+}
+
+#social li img {
+    height: 26px;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+
+#social li img:hover {
+    transform: scale(1.1);
+}
+
+#contact .container {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+}
+
+#contact-about {
+    width: 20%;
+}
+
+/* ESTILIZAÇÃO FOOTER */
+
+footer {
+    background-color: #d1d1d1;
+    text-align: center;
+    padding: 16px;
+    color: #AD4287;
+}
